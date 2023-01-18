@@ -11,7 +11,8 @@ class LoginController extends Controller
     {
 
         return view('login', [
-            'title' => 'login'
+            'title' => 'login',
+            'title2' => 'test',
         ]);
     }
 
