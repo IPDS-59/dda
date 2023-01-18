@@ -3,9 +3,9 @@
 namespace {{ namespace }};
 
 use {{ namespacedModel }};
-use {{ rootNamespace }}Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use {{ namespacedParentModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
 
 class {{ class }} extends Controller
 {

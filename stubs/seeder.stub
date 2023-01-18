@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class {{ class }} extends Seeder
 {

@@ -3,8 +3,8 @@
 namespace {{ namespace }};
 
 use {{ namespacedModel }};
-use {{ rootNamespace }}Http\Controllers\Controller;
 use {{ namespacedRequests }}
+use {{ rootNamespace }}Http\Controllers\Controller;
 
 class {{ class }} extends Controller
 {
