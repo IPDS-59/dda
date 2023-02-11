@@ -71,7 +71,8 @@
     <section id="about" class="bg-white p-8 flex justify-between flex-col w-full">
         <div class="flex flex-wrap min-h-screen">
             <div class="w-2/3 inline-block align-middle m-auto p-8">
-                <img src="images/buku.png" alt="" srcset="">
+                <img v-lazy="{ src: 'images/buku.png', loading: 'images/loading-blog.gif', error: 'images/200x200.png' }"
+                    alt="" srcset="">
             </div>
             <div class="w-1/3 m-auto text-left text-xl font-semibold">
                 <p>
@@ -113,7 +114,8 @@
                 </p>
             </div>
             <div class="mx-auto mt-16">
-                <img src="logo/dasi_logo_primary.svg" alt="">
+                <img v-lazy="{ src: 'logo/dasi_logo_primary.svg', loading: 'images/loading-blog.gif', error: 'images/200x200.png' }"
+                    alt="">
             </div>
         </div>
     </section>

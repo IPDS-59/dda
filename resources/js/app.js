@@ -2,6 +2,7 @@ import "./bootstrap";
 
 import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
+import VueLazyLoad from "vue3-lazyload";
 import route from "ziggy-js";
 
 // Plugin Initializations
@@ -17,6 +18,7 @@ createInertiaApp({
             .mixin({ methods: { route } })
             .use(plugin)
             .use(Notifications)
+            .use(VueLazyLoad)
             .mount(el);
     },
 });
