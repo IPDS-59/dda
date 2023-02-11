@@ -12,8 +12,11 @@ module.exports = {
             colors: {
                 primary: {
                     DEFAULT: "#261953",
-                    hover: "",
-                    active: "",
+                    100: "#866C9E36",
+                    400: "#253E75",
+                },
+                secondary: {
+                    DEFAULT: "#81478A",
                 },
             },
             boxShadow: {
