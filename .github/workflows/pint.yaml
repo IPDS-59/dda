@@ -28,4 +28,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Fix code styling issue
+          branch: ${{ github.head_ref }}
           skip_fetch: true
+          file_pattern: "*.php"

@@ -30,6 +30,4 @@ jobs:
           node-version: ${{ matrix.node-versions }}
           cache: "npm"
       - run: npm install
-      - run: npm run test
-        env:
-          LARAVEL_BYPASS_ENV_CHECK: true
+      - run: LARAVEL_BYPASS_ENV_CHECK=1 npm test npm run test
