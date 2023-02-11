@@ -23,4 +23,7 @@ export default defineConfig({
             assets: "/resources/assets",
         },
     },
+    test: {
+        environment: "happy-dom",
+    },
 });
