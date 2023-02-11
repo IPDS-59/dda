@@ -9,6 +9,13 @@ module.exports = {
     ],
     theme: {
         extend: {
+            colors: {
+                primary: {
+                    DEFAULT: "#261953",
+                    hover: "",
+                    active: "",
+                },
+            },
             boxShadow: {
                 DEFAULT: "0px 8px 20px rgba(143, 142, 174, 0.15)",
                 md: "0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.02)",
@@ -18,12 +25,4 @@ module.exports = {
         },
     },
     plugins: [require("@tailwindcss/forms")],
-    css: {
-        postCss: {
-            plugins: {
-                tailwindcss: {},
-                autoprefixer: {},
-            },
-        },
-    },
 };
