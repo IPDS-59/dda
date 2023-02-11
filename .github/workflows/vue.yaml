@@ -20,7 +20,7 @@ jobs:
         node-versions: ["16.x"]
         dependency-stability: [prefer-stable]
 
-    name: P${{ matrix.node-versions }} - L${{ matrix.laravel }} - ${{ matrix.dependency-stability }} - ${{ matrix.operating-system}}
+    name: Node ${{ matrix.node-versions }} - ${{ matrix.dependency-stability }} - ${{ matrix.operating-system}}
 
     steps:
       - uses: actions/checkout@v3

@@ -21,7 +21,7 @@ jobs:
         node-versions: ["16.x"]
         dependency-stability: [prefer-stable]
 
-    name: P${{ matrix.php-versions }} - L${{ matrix.laravel }} - ${{ matrix.dependency-stability }} - ${{ matrix.operating-system}}
+    name: PHP ${{ matrix.php-versions }} - Laravel ${{ matrix.laravel }} - ${{ matrix.dependency-stability }} - ${{ matrix.operating-system}}
 
     steps:
       - uses: actions/checkout@v3
@@ -37,7 +37,7 @@ jobs:
       - name: Install Node dependencies
         run: npm install
       - name: Build front-end assets
-        run: npm install
+        run: npm run build
       - name: Get Composer Cache Directory 2
         id: composer-cache
         run: |
