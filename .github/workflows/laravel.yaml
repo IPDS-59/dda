@@ -18,6 +18,7 @@ jobs:
       matrix:
         operating-system: [ubuntu-latest]
         php-versions: ["8.0"]
+        node-versions: ["16.x"]
         dependency-stability: [prefer-stable]
 
     name: P${{ matrix.php-versions }} - L${{ matrix.laravel }} - ${{ matrix.dependency-stability }} - ${{ matrix.operating-system}}
@@ -28,6 +29,15 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
+      - name: Install Node.js versions ${{ matrix.node-versions }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-versions }}
+          cache: "npm"
+      - name: Install Node dependencies
+        run: npm install
+      - name: Build front-end assets
+        run: npm install
       - name: Get Composer Cache Directory 2
         id: composer-cache
         run: |
