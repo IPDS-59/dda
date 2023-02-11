@@ -1,10 +1,14 @@
 name: Run Test and Code Quality Check
 
 on:
-  workflow_run:
-    workflows: ["Code Style Check"]
-    types:
-      - completed
+  push:
+    branches:
+      - master
+      - development
+  pull_request:
+    branches:
+      - master
+      - development
 
 jobs:
   laravel-tests:
