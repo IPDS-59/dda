@@ -23,11 +23,12 @@ jobs:
         uses: aglipanci/laravel-pint-action@0.1.0
         with:
           preset: laravel
+          testMode: true
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Fix code styling issue
-          branch: ${{ github.head_ref }}
-          skip_fetch: true
-          file_pattern: "*.php"
+      # - name: Commit changes
+      #   uses: stefanzweifel/git-auto-commit-action@v4
+      #   with:
+      #     commit_message: Fix code styling issue
+      #     branch: ${{ github.head_ref }}
+      #     skip_fetch: true
+      #     file_pattern: "*.php"
