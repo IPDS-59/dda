@@ -5,6 +5,9 @@ import { createInertiaApp } from "@inertiajs/vue3";
 import VueLazyLoad from "vue3-lazyload";
 import route from "ziggy-js";
 
+// Vue Translation
+import { i18nVue } from "laravel-vue-i18n";
+
 // Plugin Initializations
 import Notifications from "notiwind";
 
@@ -31,6 +34,12 @@ createInertiaApp({
             .use(plugin)
             .use(Notifications)
             .use(VueLazyLoad)
+            .use(i18nVue, {
+                resolve: async (lang) => {
+                    const langs = import.meta.glob("../../lang/*.json");
+                    return await langs[`../../lang/${lang}.json`]();
+                },
+            })
             .component("font-awesome-icon", FontAwesomeIcon)
             .mount(el);
     },

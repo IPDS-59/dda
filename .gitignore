@@ -5,6 +5,7 @@
 /storage/*.key
 /vendor
 /coverage
+lang/php_*.json
 .env
 .env.backup
 .env.production
