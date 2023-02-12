@@ -3,7 +3,11 @@ import "./bootstrap";
 import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
 import VueLazyLoad from "vue3-lazyload";
+
+// Ziggy for Laravel Routing
 import route from "ziggy-js";
+
+// Flag Icon
 import FlagIcon from "vue-flag-icon";
 
 // Vue Translation
