@@ -105,7 +105,7 @@ defineProps({
                         <label for="remember" class="ml-2 cursor-pointer">Ingat Saya</label>
                     </div>
                     <div>
-                        <Link class="hover:text-gray-400 hover:underline">Lupa Password?</Link>
+                        <Link href="#" class="hover:text-gray-400 hover:underline">Lupa Password?</Link>
                     </div>
                 </div>
                 <button :disabled="form.procesing"
