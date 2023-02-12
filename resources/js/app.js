@@ -4,6 +4,7 @@ import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
 import VueLazyLoad from "vue3-lazyload";
 import route from "ziggy-js";
+import FlagIcon from "vue-flag-icon";
 
 // Vue Translation
 import { i18nVue } from "laravel-vue-i18n";
@@ -34,6 +35,7 @@ createInertiaApp({
             .use(plugin)
             .use(Notifications)
             .use(VueLazyLoad)
+            .use(FlagIcon)
             .use(i18nVue, {
                 resolve: async (lang) => {
                     const langs = import.meta.glob("../../lang/*.json");
