@@ -1,6 +1,8 @@
 <?php
 
+use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return Inertia::render('landing', [
+        'title' => 'DASI - IPDS 59',
+    ], );
+})->name('landing');
+
+Route::controller(LoginController::class)->middleware('guest')->group(
+    function () {
+        Route::get('/login', 'index')->name('login');
+    },
+);
