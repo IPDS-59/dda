@@ -1,24 +1,23 @@
 <?php
 
-
 return [
     'navigation' => [
         'about' => [
             'title' => 'About',
-            'description' => 'Getting to know what DASI is'
+            'description' => 'Getting to know what DASI is',
         ],
         'feature' => [
             'title' => 'Feature',
-            'description' => 'What features does DASI offers'
+            'description' => 'What features does DASI offers',
         ],
         'video' => [
             'title' => 'Video',
-            'description' => 'Short video about DASI'
+            'description' => 'Short video about DASI',
         ],
         'documentation' => [
             'title' => 'Documentation',
-            'description' => 'Start integrating data by reading our documentation'
-        ]
+            'description' => 'Start integrating data by reading our documentation',
+        ],
     ],
     'button' => [
         'login' => 'Login',
@@ -28,19 +27,19 @@ return [
     'language' => [
         'indonesia' => [
             'title' => 'Bahasa Indonesia',
-            'description' => 'Change to Bahasa'
+            'description' => 'Change to Bahasa',
         ],
         'english' => [
             'title' => 'English',
-            'description' => 'Change to English'
-        ]
+            'description' => 'Change to English',
+        ],
     ],
     'hero' => [
         'integrate' => 'Integrate',
         'regional_statistics' => 'Our Regional Data',
         'our_through' => 'Through',
         'dasi' => 'DASI',
-        'dasi_desc' => 'DASI (In Figures Information System) is a web-based information system that aims to disseminate the publication of Regions in Figures'
+        'dasi_desc' => 'DASI (In Figures Information System) is a web-based information system that aims to disseminate the publication of Regions in Figures',
     ],
     'about' => 'Various types of data are available in publications
                      Regions in Figures (DDA) which is loaded starting from
@@ -70,5 +69,5 @@ return [
                      Regional Publications in Figures.
                     <br>
                     <br>
-                    Let\'s integrate our regional figures through DASI'
+                    Let\'s integrate our regional figures through DASI',
 ];

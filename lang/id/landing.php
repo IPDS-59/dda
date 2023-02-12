@@ -1,46 +1,45 @@
 <?php
 
-
 return [
     'navigation' => [
         'about' => [
             'title' => 'Tentang',
-            'description' => 'Ketahui apa itu DASI'
+            'description' => 'Ketahui apa itu DASI',
         ],
         'feature' => [
             'title' => 'Fitur',
-            'description' => 'Fitur apa saja yang ditawarkan DASI'
+            'description' => 'Fitur apa saja yang ditawarkan DASI',
         ],
         'video' => [
             'title' => 'Video',
-            'description' => 'Video singkat tentang DASI'
+            'description' => 'Video singkat tentang DASI',
         ],
         'documentation' => [
             'title' => 'Dokumentasi',
-            'description' => 'Mulai mengintegrasikan data dengan membaca dokumentasi'
-        ]
+            'description' => 'Mulai mengintegrasikan data dengan membaca dokumentasi',
+        ],
     ],
     'button' => [
         'login' => 'Masuk',
         'getting_started' => 'Mulai',
-        'language' => 'Bahasa'
+        'language' => 'Bahasa',
     ],
     'language' => [
         'indonesia' => [
             'title' => 'Bahasa Indonesia',
-            'description' => 'Ubah ke Bahasa Indonesia'
+            'description' => 'Ubah ke Bahasa Indonesia',
         ],
         'english' => [
             'title' => 'Bahasa Inggris',
-            'description' => 'Ubah ke Bahasa Inggris'
-        ]
+            'description' => 'Ubah ke Bahasa Inggris',
+        ],
     ],
     'hero' => [
         'integrate' => 'Integrasikan',
         'regional_statistics' => 'Data Daerah',
         'our_through' => 'Kita Lewat',
         'dasi' => 'DASI',
-        'dasi_desc' => 'DASI (Dalam Angka System Informasi) merupakan sistem informasi berbasis web yang bertujuan untuk diseminasi publikasi Daerah Dalam Angka'
+        'dasi_desc' => 'DASI (Dalam Angka System Informasi) merupakan sistem informasi berbasis web yang bertujuan untuk diseminasi publikasi Daerah Dalam Angka',
     ],
     'about' => 'Beragam jenis data tersedia dalam publikasi
                     Daerah Dalam Angka (DDA) yang dimuat mulai dari
@@ -70,5 +69,5 @@ return [
                     Publikasi Derah Dalam Angka.
                     <br>
                     <br>
-                    Mari Integrasikan Angka Daerah kita lewat DASI'
+                    Mari Integrasikan Angka Daerah kita lewat DASI',
 ];

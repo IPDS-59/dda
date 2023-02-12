@@ -20,12 +20,12 @@ return [
         'label' => [
             'username_email' => 'Username/Email',
             'password' => 'Kata Sandi',
-            'remember_me' => 'Ingat Saya'
-        ]
+            'remember_me' => 'Ingat Saya',
+        ],
     ],
     'button' => [
         'login' => 'Masuk',
         'send' => 'Kirim',
         'forgot_password' => 'Lupa Kata Sandi?',
-    ]
+    ],
 ];

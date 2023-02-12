@@ -20,13 +20,13 @@ return [
         'label' => [
             'username_email' => 'Username/Email',
             'password' => 'Password',
-            'remember_me' => 'Remember Me'
-        ]
+            'remember_me' => 'Remember Me',
+        ],
     ],
     'button' => [
         'login' => 'Login',
         'send' => 'Send',
         'forgot_password' => 'Forgot Password?',
-    ]
+    ],
 
 ];
