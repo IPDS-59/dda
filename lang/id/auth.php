@@ -16,4 +16,16 @@ return [
     'failed' => 'Kredensial ini tidak cocok dengan catatan kami.',
     'password' => 'Kata sandi yang diberikan salah.',
     'throttle' => 'Terlalu banyak upaya login. Silakan coba lagi dalam :seconds detik.',
+    'form' => [
+        'label' => [
+            'username_email' => 'Username/Email',
+            'password' => 'Kata Sandi',
+            'remember_me' => 'Ingat Saya'
+        ]
+    ],
+    'button' => [
+        'login' => 'Masuk',
+        'send' => 'Kirim',
+        'forgot_password' => 'Lupa Kata Sandi?',
+    ]
 ];
