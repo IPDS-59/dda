@@ -10,6 +10,7 @@ import axios from "axios";
 import { string } from "vue-types";
 import { notify } from "notiwind";
 import { ref, defineAsyncComponent } from "vue";
+import { trans } from 'laravel-vue-i18n'
 
 const VInput = defineAsyncComponent(() => import('@/components/VInput/index.vue'));
 
@@ -58,13 +59,14 @@ defineProps({
             }" class="mx-auto rounded-xl" width="341" height="148" alt="">
             </Link>
             <div class="w-full sm:w-1/2 xl:w-1/4 mx-auto my-8 flex flex-col">
-                <VInput name="email" id="email" label="Username/Email" :is-label-outside="false" is-filled
-                    fill-color="bg-primary-100" v-model="form.email" :error-msg="form.errors.email"
-                    v-on:update:model-value="form.clearErrors('email')" />
+                <VInput name="email" id="email" :label="trans('auth.form.label.username_email')"
+                    :is-label-outside="false" is-filled fill-color="bg-primary-100" v-model="form.email"
+                    :error-msg="form.errors.email" v-on:update:model-value="form.clearErrors('email')" />
 
-                <VInput name="password" id="password" show-suffix label="Password" :is-label-outside="false" is-filled
-                    fill-color="bg-primary-100" v-model="form.password" :error-msg="form.errors.password"
-                    v-on:update:model-value="form.clearErrors('password')" class="mt-4" :obscure="obscurePassword">
+                <VInput name="password" id="password" show-suffix :label="trans('auth.form.label.password')"
+                    :is-label-outside="false" is-filled fill-color="bg-primary-100" v-model="form.password"
+                    :error-msg="form.errors.password" v-on:update:model-value="form.clearErrors('password')"
+                    class="mt-4" :obscure="obscurePassword">
                     <template v-slot:suffix>
                         <div @click="obscurePassword = !obscurePassword" class="cursor-pointer">
                             <svg v-if="!obscurePassword" width="36" height="36" viewBox="0 0 12 22" fill="none"
@@ -102,16 +104,20 @@ defineProps({
                             class="rounded bg-gray-300 border-gray-100 focus:ring-0 accent-purple-500"
                             :checked="form.remember">
 
-                        <label for="remember" class="ml-2 cursor-pointer">Ingat Saya</label>
+                        <label for="remember" class="ml-2 cursor-pointer">{{
+                            trans('auth.form.label.remember_me')
+                        }}</label>
                     </div>
                     <div>
-                        <Link href="#" class="hover:text-gray-400 hover:underline">Lupa Password?</Link>
+                        <Link href="#" class="hover:text-gray-400 hover:underline">{{
+                            trans('auth.button.forgot_password')
+                        }}</Link>
                     </div>
                 </div>
                 <button :disabled="form.procesing"
                     class="mt-8 mx-auto text-center font-bold px-4 py-2 bg-gradient-to-r from-primary-400 to-secondary text-white rounded-lg text-xl w-1/2"
                     @click.prevent="login">
-                    LOGIN
+                    {{ trans('auth.button.login').toUpperCase() }}
                 </button>
             </div>
         </div>
